@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './LoginSignup.css';
+
 import { GoOrganization } from "react-icons/go";
 import { MdEmail } from "react-icons/md";
 import { RiLockPasswordFill } from "react-icons/ri";
@@ -53,7 +54,7 @@ const LoginSignup = () => {
         <form className="login-form" onSubmit={handleLoginSubmit}>
           <div className="inputs">
             <div className="input">
-              <span className='inputIcon'><MdEmail /></span>
+              <span className='inputIcon' style={{ color: 'grey' }}><MdEmail /></span>
               <input
                 type="email"
                 placeholder="Email Id"
@@ -64,7 +65,7 @@ const LoginSignup = () => {
             </div>
 
             <div className="input">
-              <span className='inputIcon'><RiLockPasswordFill /></span>
+              <span className='inputIcon' style={{ color: 'grey' }}><RiLockPasswordFill /></span>
               <input
                 type="password"
                 placeholder="Password"
